@@ -16,16 +16,16 @@ import com.nelioalves.cursomc.services.MockEmailService;
 public class TestConfig {
 
 	@Autowired
-	private DBService dbservice;
+	private DBService dbService;
 	
 	@Bean
-	public boolean instantiateDataBase() throws ParseException {
-		dbservice.instantiateTestDatabase();
+	public boolean instantiateDatabase() throws ParseException {
+		dbService.instantiateTestDatabase();
 		return true;
 	}
 	
 	@Bean
-	public EmailService emaiService() {
+	public EmailService emailService() {
 		return new MockEmailService();
 	}
 }
