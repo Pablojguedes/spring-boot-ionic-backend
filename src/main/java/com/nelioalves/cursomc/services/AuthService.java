@@ -61,6 +61,4 @@ public class AuthService {
 			return (char) (rand.nextInt(26) + 97);
 		}
 	}
-	
-	
 }
